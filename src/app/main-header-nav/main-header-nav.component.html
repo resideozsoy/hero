@@ -1,10 +1,15 @@
-<mat-toolbar xFlex fxLayout fxLayoutAlign='end'>
-  <div xFlex fxLayout fxLayoutAlign='end' fxHide.gt-xs>
-    <app-main-header-side-nav fxLayoutAlign='end' position="end"></app-main-header-side-nav>
+<mat-toolbar >
+  <div xFlex fxLayout class='logo' position="start" fxLayoutAlign='start'>
+    <img src="../assets/logo.svg"/>
   </div>
-  
-  <div fxFlex fxLayout fxLayoutAlign='end' position="end" fxHide.xs>
-    <ul fxLayout fxLayoutGap='15px' class="navigation-items">
+
+
+  <div xFlex fxLayout='corowlumn' fxLayoutAlign='end' fxHide.gt-xs>
+    <app-main-header-side-nav></app-main-header-side-nav>
+  </div>
+
+  <div fxFlex fxLayout fxLayoutGap='45px' fxLayoutAlign='end' position="end" fxHide.xs>
+    <ul fxLayout fxLayoutGap='45px' class="navigation-items">
       <li>
         <a routerLink='/home'> Home </a>
         <a routerLink='/purchasePass'> Purchase pass </a>

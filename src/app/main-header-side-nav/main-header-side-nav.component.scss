@@ -6,12 +6,17 @@
   width: 200px;
 }
 
-.sidenav .mat-toolbar {
-  background: inherit;
+ .mat-toolbar {
+  background: black;
+  font: normal normal normal 16px/22px Nimbus Sans;
 }
 
 .mat-toolbar.mat-primary {
   position: sticky;
   top: 0;
   z-index: 1;
+}
+
+.mat-drawer {
+  background: black;
 }
