@@ -2,10 +2,8 @@ import { Component } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { MatDialog ,MatDialogRef} from '@angular/material/dialog';
-
 import { map, shareReplay } from 'rxjs/operators';
 import { LoginComponent } from '../user/login.component';
-//import { LoginComponent } from '../user/login.component';
 
 @Component({
   selector: 'app-main-header-nav',
@@ -26,7 +24,6 @@ export class MainHeaderNavComponent {
 
   onToggleSideNav() {
     console.log('onToggleSideNav');
-    
   }
 
   openLoginDialog() {
@@ -34,9 +31,7 @@ export class MainHeaderNavComponent {
       width: '250px',
       height: '200px'
     });
-
   }
-
 }
 
 
