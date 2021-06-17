@@ -1,0 +1,20 @@
+<mat-toolbar xFlex fxLayout fxLayoutAlign='end'>
+  <div xFlex fxLayout fxLayoutAlign='end' fxHide.gt-xs>
+    <app-main-header-side-nav fxLayoutAlign='end' position="end"></app-main-header-side-nav>
+  </div>
+  
+  <div fxFlex fxLayout fxLayoutAlign='end' position="end" fxHide.xs>
+    <ul fxLayout fxLayoutGap='15px' class="navigation-items">
+      <li>
+        <a routerLink='/home'> Home </a>
+        <a routerLink='/purchasePass'> Purchase pass </a>
+        <a routerLink='/FAQs'> FAQs </a>
+        <a routerLink='/my-account'> My Account </a>
+        <a (click)="openLoginDialog()"> Login </a>
+      </li>
+
+    </ul>
+
+  </div>
+
+</mat-toolbar>
