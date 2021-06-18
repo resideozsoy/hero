@@ -1,8 +1,18 @@
 .home-component {
-    min-height: 500px;
+    min-height: calc(100vh - 320px);
     height: fit-content;
     background-image: url("../../assets/hero/smoke2.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    .center {
+      display:flex;
+      position: fixed;
+      background-color: #00FF00;
+      top: 50%;
+      left: 40%;
+      margin-top: -150px;
+      margin-left: -100px;
+    }
 }
