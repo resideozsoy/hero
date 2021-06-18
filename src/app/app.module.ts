@@ -13,6 +13,16 @@ import { FormsModule } from '@angular/forms';
 import { LayoutModule } from '@angular/cdk/layout';
 import { AngularMaterialModule } from './angular-material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { HttpClientModule } from '@angular/common/http';
+//mat video module
+import { MatVideoModule } from 'mat-video';
+
+//This didn't wotk clean up later
+import { VgCoreModule } from '@videogular/ngx-videogular/core';
+import { VgControlsModule } from '@videogular/ngx-videogular/controls';
+import { VgBufferingModule } from '@videogular/ngx-videogular/buffering';
+import { VgOverlayPlayModule } from '@videogular/ngx-videogular/overlay-play';
+import { VideoPlayerComponent } from './video-player/video-player.component';
 
 @NgModule({
   declarations: [
@@ -21,16 +31,25 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MainHeaderSideNavComponent,
     HomeComponent,
     MyAccountComponent,
-    LoginComponent
+    LoginComponent,
+    VideoPlayerComponent
   ],
   imports: [
     BrowserModule,
+    //we need this animation for video as well
     BrowserAnimationsModule,
     AppRoutingModule,
     FormsModule,
     LayoutModule,
     AngularMaterialModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatVideoModule,
+    HttpClientModule,
+    //remove them if mat video works
+    VgCoreModule,
+    VgControlsModule,
+    VgOverlayPlayModule,
+    VgBufferingModule
   ],
   exports: [],
   providers: [],
