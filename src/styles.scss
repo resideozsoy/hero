@@ -1,11 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 @import url("https://use.typekit.net/dlm3sbo.css");
 
-html, body { height: 100%; }
-body { margin: 0; font-family: nimbus-sans, Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: nimbus-sans, Roboto, "Helvetica Neue", sans-serif;
+}
 
 .logo {
-    width: 150px;
-    height: 30px;
-  }
-  
+  width: 150px;
+  height: 30px;
+}
+

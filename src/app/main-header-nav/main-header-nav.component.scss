@@ -7,8 +7,13 @@
 }
 
 .mat-toolbar {
-  background: #0B0C08;
-  font: normal normal normal 16px/22px Nimbus Sans;
+  //background: #0B0C08;
+  //font: normal normal normal 16px/22px Nimbus Sans;
+}
+
+.mat-list-item {
+  color: #ffffff;
+  font-family: nimbus-sans, Roboto, "Helvetica Neue", sans-serif;
 }
 
 .mat-toolbar.mat-primary {

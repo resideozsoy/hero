@@ -1,22 +1,20 @@
-<mat-toolbar >
+<mat-toolbar color='primary' >
   <div xFlex fxLayout class='logo' position="start" fxLayoutAlign='start'>
     <img src="../assets/logo.svg"/>
   </div>
 
 
-  <div xFlex fxLayout='corowlumn' fxLayoutAlign='end' fxHide.gt-xs>
+  <div xFlex fxLayout='column' fxLayoutAlign='end' fxHide.gt-xs>
     <app-main-header-side-nav></app-main-header-side-nav>
   </div>
 
-  <div fxFlex fxLayout fxLayoutGap='45px' fxLayoutAlign='end' position="end" fxHide.xs>
-    <ul fxLayout fxLayoutGap='45px' class="navigation-items">
-      <li>
-        <a routerLink='/home'> Home </a>
-        <a routerLink='/purchasePass'> Purchase pass </a>
-        <a routerLink='/FAQs'> FAQs </a>
-        <a routerLink='/my-account'> My Account </a>
-        <a (click)="openLoginDialog()"> Login </a>
-      </li>
-    </ul>
+  <div fxFlex fxLayout="row" fxLayoutAlign="flex-end" position="end" fxHide.xs>
+    <mat-nav-list color='primary' fxLayout="row" >
+        <a mat-list-item  routerLink='/home'> Home </a>
+        <a mat-list-item routerLink='/purchasePass'> Purchase pass </a>
+        <a mat-list-item routerLink='/FAQs'> FAQs </a>
+        <a mat-list-item routerLink='/my-account'> My Account </a>
+        <a mat-list-item (click)="openLoginDialog()"> Login </a>
+    </mat-nav-list>
   </div>
 </mat-toolbar>

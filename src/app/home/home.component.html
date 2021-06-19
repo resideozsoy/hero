@@ -1,6 +1,6 @@
 <div class='home-component'>
     <div class="center">
-        <button mat-raised-button class='play-button' color="accent">
+        <button mat-raised-button fxFlexAlign='center, center' color="warn">
             <div class='inner icon-text'>
                 <mat-icon>
                     play_circle_filled
@@ -8,9 +8,8 @@
                 <a (click)="openWatchVideoDialog()"> watch live now </a>
             </div>
         </button>
-        <button mat-raised-button color="accent">
-            <mat-icon>PURCHASE PASS</mat-icon>
-            <a routerLink='/purchase-pass'> WATCH LIVE NOW </a>
+        <button routerLink='/purchase-pass' mat-raised-button color="warn">
+            purchase pass 
         </button>
     </div>
 </div>

@@ -34,6 +34,9 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import {MatDialogModule} from '@angular/material/dialog';
 
+//mat video module
+import { MatVideoModule } from 'mat-video';
+
 const materialModules = [
   CdkTreeModule,
   MatAutocompleteModule,
@@ -67,7 +70,8 @@ const materialModules = [
   MatRadioModule,
   MatDatepickerModule,
   MatTooltipModule,
-  MatDialogModule
+  MatDialogModule,
+  MatVideoModule
 ];
 
 @NgModule({

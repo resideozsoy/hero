@@ -14,25 +14,19 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { AngularMaterialModule } from './angular-material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { HttpClientModule } from '@angular/common/http';
-//mat video module
-import { MatVideoModule } from 'mat-video';
-
-//This didn't wotk clean up later
-import { VgCoreModule } from '@videogular/ngx-videogular/core';
-import { VgControlsModule } from '@videogular/ngx-videogular/controls';
-import { VgBufferingModule } from '@videogular/ngx-videogular/buffering';
-import { VgOverlayPlayModule } from '@videogular/ngx-videogular/overlay-play';
 import { VideoPlayerComponent } from './video-player/video-player.component';
-
+import { ThemeServiceService } from './theme-service.service';
+import {MainFooterComponent} from './main-footer/main-footer.component';
 @NgModule({
   declarations: [
     AppComponent,
     MainHeaderNavComponent,
     MainHeaderSideNavComponent,
+    MainFooterComponent,
     HomeComponent,
     MyAccountComponent,
     LoginComponent,
-    VideoPlayerComponent
+    VideoPlayerComponent,
   ],
   imports: [
     BrowserModule,
@@ -43,16 +37,10 @@ import { VideoPlayerComponent } from './video-player/video-player.component';
     LayoutModule,
     AngularMaterialModule,
     FlexLayoutModule,
-    MatVideoModule,
     HttpClientModule,
-    //remove them if mat video works
-    VgCoreModule,
-    VgControlsModule,
-    VgOverlayPlayModule,
-    VgBufferingModule
   ],
   exports: [],
-  providers: [],
+  providers: [ThemeServiceService],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
