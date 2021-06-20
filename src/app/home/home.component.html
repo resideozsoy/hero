@@ -1,4 +1,4 @@
-<div class='home-component hero' fxFlex fxLayout='row'>
+<div class='home-component hero' [ngClass]="{mobile: deviceInfo?.isMobile}" fxFlex fxLayout='row'>
     <div class='smoke' fxFlex='row' fxFlexFill>
         <div  fxFlex fxLayoutAlign="flex-start">
             <img class='background-image' alt='background image 1' src="../../assets/hero/fighter-bg1.png">
