@@ -37,6 +37,7 @@
             "styles": [
               "src/streamAMG-theme.scss",
               "./node_modules/@videogular/ngx-videogular/fonts/videogular.css",
+              "src/screen-breakpoint-mixin.scss",
               "src/styles.scss"
             ],
             "scripts": []

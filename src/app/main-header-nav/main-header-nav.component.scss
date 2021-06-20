@@ -6,21 +6,17 @@
   width: 200px;
 }
 
-.mat-toolbar {
-  //background: #0B0C08;
-  //font: normal normal normal 16px/22px Nimbus Sans;
-}
-
 .mat-list-item {
   color: #ffffff;
   font-family: nimbus-sans, Roboto, "Helvetica Neue", sans-serif;
 }
 
 .mat-toolbar.mat-primary {
+  background: transparent;
   font-family: nimbus-sans, Roboto, "Helvetica Neue", sans-serif;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 100;
 }
 
 a {
