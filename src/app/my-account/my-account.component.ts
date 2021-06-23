@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild, HostListener  } from '@angular/core';
-import { MatSidenav } from '@angular/material/sidenav';
+import { MatDrawerMode, MatSidenav } from '@angular/material/sidenav';
 
 @Component({
   selector: 'app-my-account',
@@ -7,6 +7,9 @@ import { MatSidenav } from '@angular/material/sidenav';
   styleUrls: ['./my-account.component.scss']
 })
 export class MyAccountComponent implements OnInit {
+  mode: MatDrawerMode = 'side';
+  hasBackdrop ={value:true};
+
 
   constructor() { }
 
@@ -15,25 +18,18 @@ export class MyAccountComponent implements OnInit {
   sidenav!: MatSidenav;
 
   ngOnInit() {
-    console.log(window.innerWidth)
-    if (window.innerWidth < 768) {
-      this.sidenav.fixedTopGap = 55;
-      this.opened = false;
-    } else {
-      this.sidenav.fixedTopGap = 55;
-      this.opened = true;
-    }
+   
   }
 
   @HostListener('window:resize', ['$event'])
   onResize(event: { target: { innerWidth: number; }; }) {
-    if (event.target.innerWidth < 768) {
-      this.sidenav.fixedTopGap = 55;
-      this.opened = false;
-    } else {
-      this.sidenav.fixedTopGap = 55
-      this.opened = true;
-    }
+    // if (event.target.innerWidth < 768) {
+    //   this.sidenav.fixedTopGap = 55;
+    //   this.opened = false;
+    // } else {
+    //   this.sidenav.fixedTopGap = 55
+    //   this.opened = true;
+    // }
   }
 
   isBiggerScreen() {
