@@ -1,11 +1,8 @@
 import { Component, OnInit, ViewChild, ElementRef, Inject } from '@angular/core';
-import { VideoPlayerService } from './video-player.service';
-
 @Component({
   selector: 'app-video-player',
   templateUrl: './video-player.component.html',
   //styleUrls: ['./video-player.component.css'],
-  providers: [VideoPlayerService]
 })
 export class VideoPlayerComponent implements OnInit {
 
@@ -22,32 +19,8 @@ export class VideoPlayerComponent implements OnInit {
   @ViewChild('canvas')
   canvas!: ElementRef;
 
-  constructor(@Inject(VideoPlayerService) private videoPlayerService: VideoPlayerService) { }
+  constructor() { }
 
   ngOnInit() {
-    this.getVideo(this.mediaID);
-  }
-
-  getVideo(mediaID: string) {
-    this.videoPlayerService.getVideo(mediaID).subscribe((video: any) => {
-      this.video.title = video.items[0].title; // set title
-      this.video.description = video.items[0].description; // set description
-
-      // set duration
-      let duration = video.items[0].duration;
-      let minutes = Math.floor(duration / 60);
-      let seconds = Math.floor(duration % 60);
-      this.video.duration = minutes + ":" + (seconds < 10 ? "0" + seconds : seconds);
-
-      this.video.key = video.items[0].assetDescriptors[1].key; // set key
-
-      setTimeout(() => this.videoPlayer.nativeElement.play(), 0); // play
-    })
-  }
-
-  getSnapshot() {
-    let context = this.canvas.nativeElement.getContext('2d');
-
-    context.drawImage(this.videoPlayer.nativeElement, 0, 0, 160, 120);
   }
 }

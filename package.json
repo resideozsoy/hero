@@ -25,7 +25,6 @@
     "@videogular/ngx-videogular": "^3.0.1",
     "angular-material-icons": "^0.7.1",
     "hammerjs": "^2.0.8",
-    "mat-video": "^2.8.1",
     "ng-responsive-image": "^1.0.0",
     "ngx-device-detector": "^2.1.1",
     "rxjs": "~6.6.0",

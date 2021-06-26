@@ -40,8 +40,8 @@ export class HomeComponent implements OnInit {
 
   openWatchVideoDialog() {
     this.dialogRef = this.dialog.open(VideoPlayerComponent, {
-      width: '80vm',
-      height: '80vh'
+      width: 'auto',
+      height: 'auto'
     });
   }
 }
