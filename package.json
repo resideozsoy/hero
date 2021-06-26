@@ -60,12 +60,12 @@
   "main": "karma.conf.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/resideozsoy/hero.git"
+    "url": "git+https://github.com/resideozsoy/streamAGM/heros-UI.git"
   },
   "author": "Reside Ozsoy",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/resideozsoy/hero/issues"
+    "url": "https://github.com/github.com/resideozsoy/streamAGM/heros-UI/issues"
   },
-  "homepage": "https://github.com/resideozsoy/hero#readme"
+  "homepage": "https://github.com/resideozsoy/streamAGM/heros-UI#readme"
 }
